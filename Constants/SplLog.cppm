@@ -3,6 +3,7 @@ export module Constants:SplLog;
 export namespace Constants {
     namespace SplLog {
         namespace Print {
+            constexpr bool time       = true;
             constexpr bool log_level  = false;
 
             namespace source {
