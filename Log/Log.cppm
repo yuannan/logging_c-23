@@ -2,8 +2,10 @@ module;
 
 #include <print>
 
+export module Log;
+
 export namespace Log {
-  void debug (const char * fmt){
-    std::print(fmt);
+  void debug (){
+    std::print("hello from module!");
   }
 };
