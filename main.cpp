@@ -1,12 +1,13 @@
-#include <print>
-
 import Log;
 
 int main (int argc, char** argsv){
-  std::print("Hello from main!");
+    (void) argc;
+    (void) argsv;
 
-  Log::debug();
+    for (int i = 0; i < 1'000'000; i++) {
+      Log::debug("{} {}!\n", "Hello World!", 42);
+    }
 
-  return 0;
+    return 0;
 }
 
