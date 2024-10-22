@@ -1,0 +1,1 @@
+with import <nixpkgs>{}; llvmPackages.libcxxStdenv.mkDerivation { name = "build-env"; nativeBuildInputs = [ (llvmPackages.clang-tools.override { enableLibcxx = true; }) cmake ninja ]; }
